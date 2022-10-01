@@ -1,0 +1,304 @@
+/*Fonts Start*/
+@font-face {
+  font-family: 'ProximaNova-Black';
+  src: url('../fonts/Proxima-Nova/ProximaNova-Black.otf');
+}
+@font-face {
+  font-family: 'ProximaNova-BlackIt';
+  src: url('../fonts/Proxima-Nova/ProximaNova-BlackIt.otf');
+}
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('../fonts/Proxima-Nova/ProximaNova-Bold.otf');
+}
+@font-face {
+  font-family: 'ProximaNova-BoldItalic';
+  src: url('../fonts/Proxima-Nova/ProximaNova-BoldItalic.otf');
+}
+@font-face {
+  font-family: 'ProximaNova-ExtrabldIt';
+  src: url('../fonts/Proxima-Nova/ProximaNova-ExtrabldIt.otf');
+}
+@font-face {
+  font-family: 'ProximaNova-Extrabold';
+  src: url('../fonts/Proxima-Nova/ProximaNova-Extrabold.otf');
+}
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url('../fonts/Proxima-Nova/ProximaNova-Light.otf');
+}
+@font-face {
+  font-family: 'ProximaNova-LightItalic';
+  src: url('../fonts/Proxima-Nova/ProximaNova-LightItalic.otf');
+}
+@font-face {
+  font-family: 'ProximaNova-Reg';
+  src: url('../fonts/Proxima-Nova/ProximaNova-Reg.otf');
+}
+@font-face {
+  font-family: 'ProximaNova-RegularItalic';
+  src: url('../fonts/Proxima-Nova/ProximaNova-RegularItalic.otf');
+}
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url('../fonts/Proxima-Nova/ProximaNova-Semibold.otf');
+}
+@font-face {
+  font-family: 'ProximaNova-SemiboldItalic';
+  src: url('../fonts/Proxima-Nova/ProximaNova-SemiboldItalic.otf');
+}
+@font-face {
+  font-family: 'ProximaNova-Thin';
+  src: url('../fonts/Proxima-Nova/ProximaNova-Thin.otf');
+}
+@font-face {
+  font-family: 'ProximaNova-ThinIt';
+  src: url('../fonts/Proxima-Nova/ProximaNova-ThinIt.otf');
+}
+/*Fonts End*/
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: #1194f6;
+	font-family: 'ProximaNova-Reg';
+}
+body{
+	margin: 0;
+	height: 0;
+}
+.top{
+	background: #23113A;
+	height: 54px;
+}
+.navbar{
+	background: #eff1f1;
+	display: flex;
+	justify-content: space-between;
+	gap: 1px;
+	padding: 1px 0;
+}
+.navbar a{
+	font-family: 'ProximaNova-Reg';
+	font-weight: bold;
+	font-size: 16px;
+	color: #000;
+	background: #fff;
+	flex: 1;
+	text-decoration: none;
+	text-align: center;
+	padding: 15px 0px;
+}
+.cover{
+	height: min(calc(100vh - 102px), 530px);
+	background-image: url(../img/cover.png);
+	background-size: cover;
+	background-position: center;
+}
+.cover h1{
+	margin: 0;
+	color: #fff;
+	padding: 70px 60px;
+	font-family: 'ProximaNova-Black';
+	font-size: 102px;
+	font-weight: 900;
+	text-shadow: 0 0 5px #23113A;
+}
+.content{
+	padding: 60px 55px 55px;
+	background: #f0f4f7;
+}
+.content .title{
+	margin-top: 0;
+	margin-bottom: 30px;
+	font-family: 'ProximaNova-Reg';
+	font-weight: bold;
+	font-size: 30px;
+	color: #373737;
+}
+.content .master-card{
+	background: #fff;
+	padding: 40px 70px;
+}
+.content .master-card .master-card-header{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 25px;
+}
+.content .master-card .master-card-header .master-card-header-title{
+	font-family: 'ProximaNova-Reg';
+	font-size: 20px;
+	color: #373737;
+}
+.content .master-card .master-card-header .review{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	align-items: center;
+}
+.content .master-card .master-card-header .review ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	gap: 2px;
+}
+.content .master-card .master-card-header .review ul li{
+	color: #59d8d1;
+	font-size: 15px;
+}
+.content .master-card .master-card-header .review .review-count{
+	font-family: 'ProximaNova-Reg';
+	font-size: 15px;
+	color: #000;
+	text-decoration: none;
+}
+.content .master-card .master-card-body {
+    display: flex;
+    align-items: flex-start;
+}
+
+.content .master-card .master-card-body .body-left {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.content .master-card .btn-apply{
+	background: #f96e3d;
+	color: #fff;
+	border: 0;
+	border-radius: 5px;
+	font-family: 'ProximaNova-Reg';
+	font-weight: bold;
+	font-size: 15px;
+	padding: 10px;
+	cursor: pointer;
+	width: 100%;
+}
+
+.content .master-card .btn-apply:hover{
+	opacity: .9;
+}
+
+.content .master-card .master-card-body .body-right {
+}
+
+.content .master-card .master-card-body .body-left .master-card-image-approval {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.content .master-card .master-card-body .body-left .master-card-image-approval .approval {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.content .master-card .master-card-body .body-left .master-card-image-approval .approval .textual {
+	font-family: 'ProximaNova-Reg';
+	font-size: 15px;
+	color: #000;
+    text-align: center;
+}
+
+.content .master-card .master-card-body .body-left .master-card-image-approval .approval .graphical {
+    background: #59d8d1;
+    padding: 8px 16px;
+    border-radius: 100px;
+    color: #fff;
+    font-family: 'ProximaNova-Reg';
+    font-weight: 900;
+    font-size: 15px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.content .master-card .master-card-body .body-right ul {
+    margin: 0;
+}
+
+.content .master-card .master-card-body .body-right ul li {    
+    font-family: 'ProximaNova-Reg';
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.content .master-card .master-card-body .body-right ul li:last-child {
+    margin-bottom: 0;
+}
+.content .master-card hr {
+    margin: 30px 0;
+    border-color: #a8b6bc;
+    border-width: 1px;
+}
+
+@media (min-width: 768px){
+	.mobile{
+		display: none;
+	}
+}
+@media (max-width: 767px){
+	.desktop-text{
+		display: none;
+	}
+	.desktop{
+		display: none;
+	}
+	.navbar a{
+		font-size: 15px;
+	}
+	.cover h1{
+		font-size: 54px;
+		padding: 35px 30px;
+	}
+
+	.cover{
+		height: min(calc(100vh - 101px), 410px);
+	}
+
+	.content{
+		padding: 0px;
+	}
+	.content .title{
+		font-size: 18px;
+		padding: 30px 15px;
+		margin: 0;
+	}
+	.content .master-card{
+		padding: 20px 15px;
+	}
+	.content .master-card .master-card-header .master-card-header{
+		height: 15px;
+	}
+	.content .master-card .master-card-header .master-card-header-title{
+		font-size: 17px;
+	}
+	.content .master-card .master-card-header .review{
+		display: none;
+	}
+	.content .master-card .master-card-body{
+		gap: 25px;
+		flex-direction: column;
+		margin-bottom: 12px;
+	}
+	.content .master-card .master-card-body .body-left .master-card-image-approval{
+		gap:  25px;
+	}
+	.content .master-card .master-card-body .body-left .master-card-image-approval .approval{
+		justify-content: center;
+	}
+	.content .master-card .master-card-body .body-right ul {
+	    padding-left: 15px;
+	}
+	.content .master-card .master-card-body .body-right ul li{
+		font-size: 15px;
+	}
+	.content .master-card hr {
+	    margin: 20px 0;
+	}
+}
